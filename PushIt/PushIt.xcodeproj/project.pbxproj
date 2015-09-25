@@ -24,6 +24,9 @@
 		DF2F56DD1BB59F790016237F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DC1BB59F790016237F /* GlanceController.swift */; };
 		DF2F56DF1BB59F790016237F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DE1BB59F790016237F /* ComplicationController.swift */; };
 		DF2F56E11BB59F790016237F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F56E01BB59F790016237F /* Assets.xcassets */; };
+		DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FB1BB5C5250016237F /* DDPWeek.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FD1BB5C58B0016237F /* DDPDay.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,9 @@
 		DF2F56DE1BB59F790016237F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		DF2F56E01BB59F790016237F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2F56E21BB59F790016237F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPChallenge.swift; path = Model/DDPChallenge.swift; sourceTree = "<group>"; };
+		DF2F56FB1BB5C5250016237F /* DDPWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPWeek.swift; path = Model/DDPWeek.swift; sourceTree = "<group>"; };
+		DF2F56FD1BB5C58B0016237F /* DDPDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPDay.swift; path = Model/DDPDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 		DF2F569A1BB59F790016237F /* PushIt */ = {
 			isa = PBXGroup;
 			children = (
+				DF2F56F61BB5C3220016237F /* Model */,
 				DF2F569B1BB59F790016237F /* AppDelegate.swift */,
 				DF2F569D1BB59F790016237F /* ViewController.swift */,
 				DF2F569F1BB59F790016237F /* Main.storyboard */,
@@ -229,6 +236,16 @@
 				DF2F56D51BB59F790016237F /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF2F56F61BB5C3220016237F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */,
+				DF2F56FB1BB5C5250016237F /* DDPWeek.swift */,
+				DF2F56FD1BB5C58B0016237F /* DDPDay.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */,
+				DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */,
+				DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */,
 				DF2F569E1BB59F790016237F /* ViewController.swift in Sources */,
 				DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */,
 			);
