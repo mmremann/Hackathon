@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Cu-Wx-7VD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
@@ -10,11 +10,39 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PushIt_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="133.5" height="123.5" alignment="left" text="Hello Watch" id="TQ8-Bg-efw"/>
+                        <label width="133.5" height="123.5" alignment="left" text="Page 1" id="TQ8-Bg-efw"/>
+                    </items>
+                    <connections>
+                        <segue destination="QFG-hP-dXb" kind="relationship" relationship="nextPage" id="QPc-ib-S1r"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="566" y="312"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="UGU-7b-Cfr">
+            <objects>
+                <controller hidesWhenLoading="NO" id="QFG-hP-dXb">
+                    <items>
+                        <label alignment="left" text="Page 2" id="gbL-ET-Fo3"/>
+                    </items>
+                    <connections>
+                        <segue destination="h2d-3H-6rF" kind="relationship" relationship="nextPage" id="ppm-zZ-cEd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="813" y="312"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="ILv-8f-Rk1">
+            <objects>
+                <controller hidesWhenLoading="NO" id="h2d-3H-6rF">
+                    <items>
+                        <label alignment="left" text="Page 3" id="qyF-Eh-PAc"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="1046" y="312"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -27,7 +55,80 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="87" y="280"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="XNX-zJ-jhI">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="tl1-ej-YdV">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XQ2-f0-dK1"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="PushUpDetected" id="NTt-m4-Ogb"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XQ2-f0-dK1" id="rcs-s6-6FY"/>
+                        <segue destination="plF-cE-kzu" kind="relationship" relationship="dynamicNotificationInterface" id="ct0-dL-I5Q"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="156" y="903"/>
+        </scene>
+        <!--Push Up Input Interface Controller-->
+        <scene sceneID="xXW-lM-Kqx">
+            <objects>
+                <controller hidesWhenLoading="NO" id="1Cu-Wx-7VD" customClass="PushUpInputInterfaceController" customModule="PushIt_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.12" alignment="left" text="How many?" textAlignment="center" id="CHf-rd-h0J">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <group width="1" height="0.20999999999999999" alignment="left" id="Sgg-vB-8i2">
+                            <items>
+                                <button width="0.33333333333333298" height="1" alignment="left" title="1" id="yYD-fl-tm9"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="2" id="zrO-Yh-3BP"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="3" id="ciB-bK-3yE"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20999999999999999" alignment="left" id="jZ5-AZ-OMS">
+                            <items>
+                                <button width="0.33333333333333298" height="1" alignment="left" title="4" id="bMS-2E-g45"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="5" id="y4R-rP-LI0"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="6" id="roA-Bo-d76"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20999999999999999" alignment="left" id="UiH-eD-aAe">
+                            <items>
+                                <button width="0.33333333333333298" height="1" alignment="left" title="7" id="Jud-nZ-dNS"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="8" id="8BP-DU-AHG"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="9" id="gnS-LM-IF4"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20999999999999999" alignment="left" id="yhB-Z3-g7u">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="&lt;" id="mBb-QR-0s7"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="0" id="IQ4-K2-RmR"/>
+                                <button width="0.33333333332999998" height="1" alignment="left" title="ok" id="lRG-oe-QwN"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="742" y="639"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="9dg-RF-6I1">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="Umh-UB-fWj">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="2tK-3a-lvB"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="PushpUpDone" id="wxW-9u-MM1"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="2tK-3a-lvB" id="2Ay-Z3-Uc4"/>
+                        <segue destination="Jr9-HQ-OaU" kind="relationship" relationship="dynamicNotificationInterface" id="p0K-7h-BY4"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="146" y="1150"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -36,21 +137,35 @@
                     <items>
                         <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="PushUpReminder" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
                         <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="235" y="1001"/>
+            <point key="canvasLocation" x="151" y="571"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="PushIt_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1001"/>
+            <point key="canvasLocation" x="435" y="571"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="lC1-oS-oXh">
+            <objects>
+                <controller hidesWhenLoading="NO" id="plF-cE-kzu"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="903"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="wcM-cR-AtC">
+            <objects>
+                <controller hidesWhenLoading="NO" id="Jr9-HQ-OaU"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="1150"/>
         </scene>
     </scenes>
 </document>

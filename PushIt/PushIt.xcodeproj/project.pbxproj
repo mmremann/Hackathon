@@ -10,6 +10,10 @@
 		1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */; settings = {ASSET_TAGS = (); }; };
 		1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */; settings = {ASSET_TAGS = (); }; };
 		1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A78911BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78901BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A78931BB5D0A5001D2BC4 /* PushUpReminderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A78951BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A78971BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569B1BB59F790016237F /* AppDelegate.swift */; };
 		DF2F569E1BB59F790016237F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569D1BB59F790016237F /* ViewController.swift */; };
 		DF2F56A11BB59F790016237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F569F1BB59F790016237F /* Main.storyboard */; };
@@ -23,7 +27,6 @@
 		DF2F56D01BB59F790016237F /* PushIt WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF2F56CF1BB59F790016237F /* PushIt WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DF2F56D71BB59F790016237F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56D61BB59F790016237F /* InterfaceController.swift */; };
 		DF2F56D91BB59F790016237F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56D81BB59F790016237F /* ExtensionDelegate.swift */; };
-		DF2F56DB1BB59F790016237F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DA1BB59F790016237F /* NotificationController.swift */; };
 		DF2F56DD1BB59F790016237F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DC1BB59F790016237F /* GlanceController.swift */; };
 		DF2F56DF1BB59F790016237F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DE1BB59F790016237F /* ComplicationController.swift */; };
 		DF2F56E11BB59F790016237F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F56E01BB59F790016237F /* Assets.xcassets */; };
@@ -92,6 +95,10 @@
 		1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDateFormatter.swift; path = Utilities/DDDateFormatter.swift; sourceTree = "<group>"; };
 		1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDCollectionViewUtility.swift; path = Utilities/DDCollectionViewUtility.swift; sourceTree = "<group>"; };
 		1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDViewUtility.swift; path = Utilities/DDViewUtility.swift; sourceTree = "<group>"; };
+		1B5A78901BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpInputInterfaceController.swift; sourceTree = "<group>"; };
+		1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpReminderNotification.swift; sourceTree = "<group>"; };
+		1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpDetectedNotificationController.swift; sourceTree = "<group>"; };
+		1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpDoneNotificationController.swift; sourceTree = "<group>"; };
 		DF2F56981BB59F790016237F /* PushIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F569B1BB59F790016237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2F569D1BB59F790016237F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +120,6 @@
 		DF2F56D51BB59F790016237F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		DF2F56D61BB59F790016237F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		DF2F56D81BB59F790016237F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		DF2F56DA1BB59F790016237F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		DF2F56DC1BB59F790016237F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		DF2F56DE1BB59F790016237F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		DF2F56E01BB59F790016237F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +169,16 @@
 				1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		1B5A78981BB5D0E2001D2BC4 /* NotificaitonsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */,
+				1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */,
+				1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */,
+			);
+			name = NotificaitonsControllers;
 			sourceTree = "<group>";
 		};
 		DF2F568F1BB59F790016237F = {
@@ -237,9 +253,10 @@
 			children = (
 				DF2F56D61BB59F790016237F /* InterfaceController.swift */,
 				DF2F56D81BB59F790016237F /* ExtensionDelegate.swift */,
-				DF2F56DA1BB59F790016237F /* NotificationController.swift */,
 				DF2F56DC1BB59F790016237F /* GlanceController.swift */,
 				DF2F56DE1BB59F790016237F /* ComplicationController.swift */,
+				1B5A78901BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift */,
+				1B5A78981BB5D0E2001D2BC4 /* NotificaitonsControllers */,
 				DF2F56E01BB59F790016237F /* Assets.xcassets */,
 				DF2F56E21BB59F790016237F /* Info.plist */,
 				DF2F56D41BB59F790016237F /* Supporting Files */,
@@ -487,11 +504,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2F56DB1BB59F790016237F /* NotificationController.swift in Sources */,
 				DF2F56D91BB59F790016237F /* ExtensionDelegate.swift in Sources */,
 				DF2F56DF1BB59F790016237F /* ComplicationController.swift in Sources */,
+				1B5A78931BB5D0A5001D2BC4 /* PushUpReminderNotification.swift in Sources */,
+				1B5A78951BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift in Sources */,
+				1B5A78911BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift in Sources */,
 				DF2F56D71BB59F790016237F /* InterfaceController.swift in Sources */,
 				DF2F56DD1BB59F790016237F /* GlanceController.swift in Sources */,
+				1B5A78971BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

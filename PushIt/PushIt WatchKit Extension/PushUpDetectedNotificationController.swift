@@ -1,8 +1,8 @@
 //
-//  NotificationController.swift
-//  PushIt WatchKit Extension
+//  PushUpDetectedNotificationController.swift
+//  PushIt
 //
-//  Created by Mann, Josh (US - Denver) on 9/25/15.
+//  Created by Ujwal Manjunath on 9/25/15.
 //  Copyright © 2015 Mann, Josh (US - Denver). All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class NotificationController: WKUserNotificationInterfaceController {
+class PushUpDetectedNotificationController: WKUserNotificationInterfaceController {
 
     override init() {
         // Initialize variables here.
