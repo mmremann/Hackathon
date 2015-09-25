@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */; settings = {ASSET_TAGS = (); }; };
 		DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569B1BB59F790016237F /* AppDelegate.swift */; };
 		DF2F569E1BB59F790016237F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569D1BB59F790016237F /* ViewController.swift */; };
 		DF2F56A11BB59F790016237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F569F1BB59F790016237F /* Main.storyboard */; };
@@ -86,6 +89,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDateFormatter.swift; path = Utilities/DDDateFormatter.swift; sourceTree = "<group>"; };
+		1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDCollectionViewUtility.swift; path = Utilities/DDCollectionViewUtility.swift; sourceTree = "<group>"; };
+		1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDViewUtility.swift; path = Utilities/DDViewUtility.swift; sourceTree = "<group>"; };
 		DF2F56981BB59F790016237F /* PushIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F569B1BB59F790016237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2F569D1BB59F790016237F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +155,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5A78871BB5C88B001D2BC4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */,
+				1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */,
+				1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		DF2F568F1BB59F790016237F = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +192,7 @@
 		DF2F569A1BB59F790016237F /* PushIt */ = {
 			isa = PBXGroup;
 			children = (
+				1B5A78871BB5C88B001D2BC4 /* Utilities */,
 				DF2F56F61BB5C3220016237F /* Model */,
 				DF2F569B1BB59F790016237F /* AppDelegate.swift */,
 				DF2F569D1BB59F790016237F /* ViewController.swift */,
@@ -439,9 +456,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */,
 				DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */,
+				1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */,
 				DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */,
 				DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */,
+				1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */,
 				DF2F569E1BB59F790016237F /* ViewController.swift in Sources */,
 				DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */,
 			);
@@ -762,6 +782,7 @@
 				DF2F56E71BB59F790016237F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF2F56E91BB59F790016237F /* Build configuration list for PBXNativeTarget "PushIt WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +791,7 @@
 				DF2F56EB1BB59F790016237F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF2F56ED1BB59F790016237F /* Build configuration list for PBXNativeTarget "PushIt" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +800,7 @@
 				DF2F56EF1BB59F790016237F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF2F56F01BB59F790016237F /* Build configuration list for PBXNativeTarget "PushItTests" */ = {
 			isa = XCConfigurationList;
@@ -786,6 +809,7 @@
 				DF2F56F21BB59F790016237F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF2F56F31BB59F790016237F /* Build configuration list for PBXNativeTarget "PushItUITests" */ = {
 			isa = XCConfigurationList;
@@ -794,6 +818,7 @@
 				DF2F56F51BB59F790016237F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
