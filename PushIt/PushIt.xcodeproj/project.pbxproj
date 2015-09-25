@@ -39,6 +39,7 @@
 		DF2F570A1BB5DD380016237F /* DDPDoItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF2F570C1BB5DD4D0016237F /* DDPTrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DFA8CA541BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8CA531BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFA8CA561BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8CA551BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPDoItViewController.swift; path = Controllers/DDPDoItViewController.swift; sourceTree = "<group>"; };
 		DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDPTrackItViewController.swift; sourceTree = "<group>"; };
 		DFA8CA531BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPChallengeSetupViewController.swift; path = Controllers/DDPChallengeSetupViewController.swift; sourceTree = "<group>"; };
+		DFA8CA551BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPSaltNPeppaViewController.swift; path = Controllers/DDPSaltNPeppaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 				DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */,
 				DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */,
 				DFA8CA531BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift */,
+				DFA8CA551BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				DF2F57041BB5DAB60016237F /* DDPMainPageViewController.swift in Sources */,
 				1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */,
 				DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */,
+				DFA8CA561BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift in Sources */,
 				DF2F570C1BB5DD4D0016237F /* DDPTrackItViewController.swift in Sources */,
 				DF2F57081BB5DD1C0016237F /* DDPLearnItViewController.swift in Sources */,
 				DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */,
