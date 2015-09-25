@@ -14,6 +14,7 @@
 		1B5A78931BB5D0A5001D2BC4 /* PushUpReminderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */; settings = {ASSET_TAGS = (); }; };
 		1B5A78951BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */; settings = {ASSET_TAGS = (); }; };
 		1B5A78971BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A789E1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A789D1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569B1BB59F790016237F /* AppDelegate.swift */; };
 		DF2F569E1BB59F790016237F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569D1BB59F790016237F /* ViewController.swift */; };
 		DF2F56A11BB59F790016237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F569F1BB59F790016237F /* Main.storyboard */; };
@@ -104,6 +105,7 @@
 		1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpReminderNotification.swift; sourceTree = "<group>"; };
 		1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpDetectedNotificationController.swift; sourceTree = "<group>"; };
 		1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpDoneNotificationController.swift; sourceTree = "<group>"; };
+		1B5A789D1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayStatsInterfaceController.swift; sourceTree = "<group>"; };
 		DF2F56981BB59F790016237F /* PushIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F569B1BB59F790016237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2F569D1BB59F790016237F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,13 @@
 			name = NotificaitonsControllers;
 			sourceTree = "<group>";
 		};
+		1B5A789C1BB5E79A001D2BC4 /* NoChallengeInProgress */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NoChallengeInProgress;
+			sourceTree = "<group>";
+		};
 		DF2F568F1BB59F790016237F = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +271,9 @@
 		DF2F56D31BB59F790016237F /* PushIt WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1B5A789C1BB5E79A001D2BC4 /* NoChallengeInProgress */,
 				DF2F56D61BB59F790016237F /* InterfaceController.swift */,
+				1B5A789D1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift */,
 				DF2F56D81BB59F790016237F /* ExtensionDelegate.swift */,
 				DF2F56DC1BB59F790016237F /* GlanceController.swift */,
 				DF2F56DE1BB59F790016237F /* ComplicationController.swift */,
@@ -538,6 +549,7 @@
 				1B5A78951BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift in Sources */,
 				1B5A78911BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift in Sources */,
 				DF2F56D71BB59F790016237F /* InterfaceController.swift in Sources */,
+				1B5A789E1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift in Sources */,
 				DF2F56DD1BB59F790016237F /* GlanceController.swift in Sources */,
 				1B5A78971BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift in Sources */,
 			);

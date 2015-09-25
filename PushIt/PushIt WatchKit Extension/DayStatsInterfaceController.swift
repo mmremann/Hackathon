@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  PushIt WatchKit Extension
+//  DayStatsInterfaceController.swift
+//  PushIt
 //
-//  Created by Mann, Josh (US - Denver) on 9/25/15.
+//  Created by Ujwal Manjunath on 9/25/15.
 //  Copyright © 2015 Mann, Josh (US - Denver). All rights reserved.
 //
 
@@ -10,11 +10,11 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class DayStatsInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        WKImageAnimatable
+        
         // Configure interface objects here.
     }
 
@@ -27,6 +27,5 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-    
 
 }
