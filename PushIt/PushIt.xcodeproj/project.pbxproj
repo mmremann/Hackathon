@@ -33,6 +33,10 @@
 		DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */; settings = {ASSET_TAGS = (); }; };
 		DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FB1BB5C5250016237F /* DDPWeek.swift */; settings = {ASSET_TAGS = (); }; };
 		DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FD1BB5C58B0016237F /* DDPDay.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F57041BB5DAB60016237F /* DDPMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57031BB5DAB60016237F /* DDPMainPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F57081BB5DD1C0016237F /* DDPLearnItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57071BB5DD1C0016237F /* DDPLearnItViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F570A1BB5DD380016237F /* DDPDoItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F570C1BB5DD4D0016237F /* DDPTrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,10 @@
 		DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPChallenge.swift; path = Model/DDPChallenge.swift; sourceTree = "<group>"; };
 		DF2F56FB1BB5C5250016237F /* DDPWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPWeek.swift; path = Model/DDPWeek.swift; sourceTree = "<group>"; };
 		DF2F56FD1BB5C58B0016237F /* DDPDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPDay.swift; path = Model/DDPDay.swift; sourceTree = "<group>"; };
+		DF2F57031BB5DAB60016237F /* DDPMainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPMainPageViewController.swift; path = Controllers/DDPMainPageViewController.swift; sourceTree = "<group>"; };
+		DF2F57071BB5DD1C0016237F /* DDPLearnItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPLearnItViewController.swift; path = Controllers/DDPLearnItViewController.swift; sourceTree = "<group>"; };
+		DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDPDoItViewController.swift; path = Controllers/DDPDoItViewController.swift; sourceTree = "<group>"; };
+		DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDPTrackItViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +216,7 @@
 		DF2F569A1BB59F790016237F /* PushIt */ = {
 			isa = PBXGroup;
 			children = (
+				DF2F57021BB5DA580016237F /* Controllers */,
 				1B5A78871BB5C88B001D2BC4 /* Utilities */,
 				DF2F56F61BB5C3220016237F /* Model */,
 				DF2F569B1BB59F790016237F /* AppDelegate.swift */,
@@ -280,6 +289,17 @@
 				DF2F56FD1BB5C58B0016237F /* DDPDay.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DF2F57021BB5DA580016237F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F57031BB5DAB60016237F /* DDPMainPageViewController.swift */,
+				DF2F57071BB5DD1C0016237F /* DDPLearnItViewController.swift */,
+				DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */,
+				DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,9 +494,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */,
+				DF2F570A1BB5DD380016237F /* DDPDoItViewController.swift in Sources */,
 				DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */,
+				DF2F57041BB5DAB60016237F /* DDPMainPageViewController.swift in Sources */,
 				1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */,
 				DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */,
+				DF2F570C1BB5DD4D0016237F /* DDPTrackItViewController.swift in Sources */,
+				DF2F57081BB5DD1C0016237F /* DDPLearnItViewController.swift in Sources */,
 				DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */,
 				1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */,
 				DF2F569E1BB59F790016237F /* ViewController.swift in Sources */,
