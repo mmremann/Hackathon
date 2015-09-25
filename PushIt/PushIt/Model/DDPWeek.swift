@@ -9,5 +9,8 @@
 import UIKit
 
 class DDPWeek: NSObject {
-
+    var max:NSNumber?
+    var startDate:NSDate?
+    var endDate:NSDate?
+    var day:Array<DDPDay>?
 }

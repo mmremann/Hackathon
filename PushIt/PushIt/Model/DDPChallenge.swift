@@ -9,5 +9,10 @@
 import UIKit
 
 class DDPChallenge: NSObject {
+    
+    var id:NSNumber?
+    var fromDate:NSDate?
+    var toData:NSDate?
+    var week:Array<DDPWeek>?
 
 }

@@ -9,5 +9,9 @@
 import UIKit
 
 class DDPDay: NSObject {
-
+    var id:NSNumber?
+    var frequency:NSNumber?
+    var totalNumberOfPushUpsToday:NSNumber?
+    var date:NSDate?
+    var percentageOfMax:NSNumber?
 }
