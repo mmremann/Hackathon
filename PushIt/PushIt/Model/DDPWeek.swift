@@ -8,41 +8,43 @@
 
 import UIKit
 
-class DDPWeek: NSObject, NSCoding {
+class DDPWeek: NSObject {
     var max:NSNumber?
     var startDate:NSDate?
     var endDate:NSDate?
     var day:[DDPDay]?
     
     //Memberwise initalizer
-    init(max:NSNumber, startDate:NSDate, endDate:NSDate, day:[DDPDay]) {
-        self.max = max
-        self.startDate = startDate
-        self.endDate = endDate
-        self.day = day
+    init(dict:[String:AnyObject]) {
+        super.init()
+        self.updateWithDictionary(dict)
     }
     
     //MARK: NSCoding
-    required convenience init?(coder decoder: NSCoder) {
-        guard let max = decoder.decodeObjectForKey("max") as? NSNumber,
-            let startDate = decoder.decodeObjectForKey("startDate") as? NSDate,
-            let endDate = decoder.decodeObjectForKey("endDate") as? NSDate,
-            let day = decoder.decodeObjectForKey("day") as? [DDPDay]
-            else { return nil }
+    func updateWithDictionary(dict:[String:AnyObject]) {
+        guard let newMax = dict["max"] as? NSNumber,
+            let newStartDate = dict["startDate"] as? NSDate,
+            let newEndDate = dict["endDate"] as? NSDate
+        else {
+                print("Error reading Challenge Dict")
+                return
+        }
         
-        self.init(
-            max: max,
-            startDate: startDate,
-            endDate: endDate,
-            day: day
-        )
+        max  = newMax
+        startDate = newStartDate
+        endDate = newEndDate
+        
+        // create 7 days
+        //days
     }
     
-    func encodeWithCoder(coder: NSCoder) {
-        coder.encodeObject(self.max, forKey: "max")
-        coder.encodeObject(self.startDate, forKey: "startDate")
-        coder.encodeObject(self.endDate, forKey: "endDate")
-        coder.encodeObject(self.day, forKey: "day")
+    func dictionaryRepresentation() -> [String:AnyObject]? {
+        let dict:[String:AnyObject]? = nil
+        
+        // create json dictionary
+        
+        
+        return dict;
     }
 
 }

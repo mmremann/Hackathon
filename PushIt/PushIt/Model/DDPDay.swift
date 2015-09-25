@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DDPDay: NSObject, NSCoding {
+class DDPDay: NSObject {
     var id:NSNumber?
     var frequency:NSNumber?
     var totalNumberOfPushUpsToday:NSNumber?
@@ -16,37 +16,38 @@ class DDPDay: NSObject, NSCoding {
     var percentageOfMax:NSNumber?
     
     //Memberwise initalizer
-    init(id:NSNumber, frequency:NSNumber, totalNumberOfPushUpsToday:NSNumber, date:NSDate, percentageOfMax:NSNumber) {
-        self.id = id
-        self.frequency = frequency
-        self.totalNumberOfPushUpsToday = totalNumberOfPushUpsToday
-        self.date = date
-        self.percentageOfMax = percentageOfMax
+    init(dict:[String:AnyObject]) {
+        super.init()
+        self.updateWithDictionary(dict)
     }
     
     //MARK: NSCoding
-    required convenience init?(coder decoder: NSCoder) {
-        guard let id = decoder.decodeObjectForKey("id") as? NSNumber,
-            let frequency = decoder.decodeObjectForKey("frequency") as? NSNumber,
-            let totalNumberOfPushUpsToday = decoder.decodeObjectForKey("totalNumberOfPushUpsToday") as? NSNumber,
-            let date = decoder.decodeObjectForKey("date") as? NSDate,
-            let percentageOfMax = decoder.decodeObjectForKey("percentageOfMax") as? NSNumber
-            else { return nil }
+    func updateWithDictionary(dict:[String:AnyObject]) {
+        guard let newId = dict["max"] as? NSNumber,
+             newFrequency = dict["startDate"] as? NSNumber,
+             newtotalNumberOfPushUpsToday = dict["endDate"] as? NSNumber,
+             newDate = dict["endDate"] as? NSDate,
+             newPercentageOfMax = dict["percentageOfMax"] as? NSNumber
         
-        self.init(
-            id: id,
-            frequency: frequency,
-            totalNumberOfPushUpsToday: totalNumberOfPushUpsToday,
-            date: date,
-            percentageOfMax: percentageOfMax
-        )
+        else {
+                print("Error reading Challenge Dict")
+                return
+        }
+        
+        id = newId
+        frequency = newFrequency
+        totalNumberOfPushUpsToday = newtotalNumberOfPushUpsToday
+        date = newDate
+        percentageOfMax = newPercentageOfMax
     }
     
-    func encodeWithCoder(coder: NSCoder) {
-        coder.encodeObject(self.id, forKey: "id")
-        coder.encodeObject(self.frequency, forKey: "frequency")
-        coder.encodeObject(self.totalNumberOfPushUpsToday, forKey: "totalNumberOfPushUpsToday")
-        coder.encodeObject(self.date, forKey: "date")
-        coder.encodeObject(self.percentageOfMax, forKey: "percentageOfMax")
+    func dictionaryRepresentation() -> [String:AnyObject]? {
+        let dict:[String:AnyObject]? = nil
+        
+        // create json dictionary
+        
+        
+        return dict;
     }
+
 }
