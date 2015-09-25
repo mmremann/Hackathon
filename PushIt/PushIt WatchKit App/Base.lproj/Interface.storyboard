@@ -9,8 +9,12 @@
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PushIt_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" image="watch-circle" id="7Ui-nG-iK7"/>
+                    </items>
                     <color key="backgroundColor" red="0.17254901959999999" green="0.22352941179999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
+                        <outlet property="image" destination="7Ui-nG-iK7" id="Ad2-su-l5D"/>
                         <segue destination="QFG-hP-dXb" kind="relationship" relationship="nextPage" id="QPc-ib-S1r"/>
                     </connections>
                 </controller>

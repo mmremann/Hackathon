@@ -12,9 +12,10 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var image: WKInterfaceImage!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        WKImageAnimatable
+        
         // Configure interface objects here.
     }
 
