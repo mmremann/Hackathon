@@ -156,7 +156,17 @@
         <!--Dynamic Notification Interface Controller-->
         <scene sceneID="lC1-oS-oXh">
             <objects>
-                <controller hidesWhenLoading="NO" id="plF-cE-kzu"/>
+                <controller hidesWhenLoading="NO" id="plF-cE-kzu">
+                    <items>
+                        <group width="1" height="62.5" alignment="left" id="Dby-bi-Bzf">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="12 pushups detected! Correct?" textAlignment="center" numberOfLines="6" id="67m-j8-kT1">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="456" y="903"/>
         </scene>
