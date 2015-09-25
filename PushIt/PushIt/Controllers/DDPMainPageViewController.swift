@@ -9,11 +9,18 @@
 import UIKit
 
 class DDPMainPageViewController: UIPageViewController {
+    
+    var controllerNames: [UIViewController]?
+    var pageIndex: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.controllerNames = [self.storyboard!.instantiateViewControllerWithIdentifier("learnIt"), self.storyboard!.instantiateViewControllerWithIdentifier("doIt"), self.storyboard!.instantiateViewControllerWithIdentifier("trackIt")];
+        self.setViewControllers([self.controllerNames!.first!]
+            , direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: { (val) -> Void in
+            
+            })
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +28,35 @@ class DDPMainPageViewController: UIPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - UIPageViewControllerDataSource
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        
+        if self.pageIndex > 0 {
+            return getItemController(self.pageIndex - 1)
+        }
+        
+        return nil
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        
+        let itemController = viewController as UIViewController
+        
+        if self.pageIndex+1 < controllerNames!.count {
+            return getItemController(self.pageIndex+1)
+        }
+        
+        return nil
+    }
+    
+    private func getItemController(itemIndex: Int) -> UIViewController? {
+        
+        if itemIndex < controllerNames!.count {
+            return self.controllerNames![itemIndex] as UIViewController
+        }
+        
+        return nil
+    }
 
     /*
     // MARK: - Navigation

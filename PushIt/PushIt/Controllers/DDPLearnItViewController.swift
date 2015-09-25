@@ -10,6 +10,10 @@ import UIKit
 
 class DDPLearnItViewController: UIViewController {
 
+    @IBOutlet weak var challengeTypeSegmentControl: UISegmentedControl!
+    @IBOutlet weak var difficultySegmentControl: UISegmentedControl!
+    @IBOutlet weak var startDate: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
