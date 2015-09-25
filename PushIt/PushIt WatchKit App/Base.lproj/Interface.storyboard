@@ -112,7 +112,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="742" y="639"/>
+            <point key="canvasLocation" x="813" y="587"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="9dg-RF-6I1">
@@ -144,14 +144,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="151" y="571"/>
+            <point key="canvasLocation" x="156" y="620"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="PushIt_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="435" y="571"/>
+            <point key="canvasLocation" x="456" y="620"/>
         </scene>
         <!--Dynamic Notification Interface Controller-->
         <scene sceneID="lC1-oS-oXh">

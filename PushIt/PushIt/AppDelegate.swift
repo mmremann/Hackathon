@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        setupNotifications(application)
         return true
     }
 
@@ -38,6 +39,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    //MARK: - Notifications
+    
+    private func setupNotifications(application:UIApplication) {
+        
+        let nopeLazyAction = UIMutableUserNotificationAction()
+        nopeLazyAction.identifier = "nopeiamlazy"
+        nopeLazyAction.title = "Nope, i'm lazy"
+        nopeLazyAction.activationMode = UIUserNotificationActivationMode.Foreground
+        nopeLazyAction.authenticationRequired = false
+        
+        let notQuiteAction = UIMutableUserNotificationAction()
+        notQuiteAction.identifier = "notquite"
+        notQuiteAction.title = "Not quite..."
+        notQuiteAction.activationMode = UIUserNotificationActivationMode.Foreground
+        notQuiteAction.authenticationRequired = false
+        
+        let yesAction = UIMutableUserNotificationAction()
+        yesAction.identifier = "yes!"
+        yesAction.title = "YES!"
+        yesAction.activationMode = UIUserNotificationActivationMode.Foreground
+        yesAction.authenticationRequired = false
+        
+        let reminderCategory = UIMutableUserNotificationCategory()
+        reminderCategory.identifier = "PushUpReminder"
+        reminderCategory.setActions(nil, forContext: UIUserNotificationActionContext.Default)
+        
+        let detectedCategory = UIMutableUserNotificationCategory()
+        detectedCategory.identifier = "PushUpDetected"
+        detectedCategory.setActions([yesAction,notQuiteAction], forContext: UIUserNotificationActionContext.Default)
+        
+        let doneCategory = UIMutableUserNotificationCategory()
+        doneCategory.identifier = "PushUpDone"
+        doneCategory.setActions([yesAction, notQuiteAction, nopeLazyAction], forContext: UIUserNotificationActionContext.Default)
+        
+        let categories = NSSet(objects: reminderCategory, detectedCategory, doneCategory)
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: categories as? Set<UIUserNotificationCategory>))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: categories as? Set<UIUserNotificationCategory>))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound, categories: categories as? Set<UIUserNotificationCategory>))
+        
     }
 
 
