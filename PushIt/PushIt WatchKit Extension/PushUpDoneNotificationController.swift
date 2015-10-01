@@ -39,7 +39,7 @@ class PushUpDoneNotificationController: WKUserNotificationInterfaceController {
         
         // setup UI here
         
-        
+        print(localNotification)
         completionHandler(.Custom)
     }
 

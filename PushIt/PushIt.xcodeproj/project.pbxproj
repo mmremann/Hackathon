@@ -847,6 +847,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Deloitte.PushIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02f04182-8a9a-4d3c-af33-b89802e5ec53";
 			};
 			name = Debug;
 		};
@@ -860,6 +861,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Deloitte.PushIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02f04182-8a9a-4d3c-af33-b89802e5ec53";
 			};
 			name = Release;
 		};

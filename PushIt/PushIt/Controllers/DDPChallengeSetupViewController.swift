@@ -30,7 +30,9 @@ class DDPChallengeSetupViewController: UIViewController {
         let now: NSDateComponents = NSCalendar.currentCalendar().components([.Hour, .Minute, .Second], fromDate: NSDate())
         
         let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-        let date = cal.dateBySettingHour(now.hour, minute: now.minute, second: now.second + 10, ofDate: NSDate(), options: NSCalendarOptions())
+        
+        let min = now.minute + ((now.second >= 50) ? 1: 0)
+        let date = cal.dateBySettingHour(now.hour, minute: min, second: (now.second + 10) % 60, ofDate: NSDate(), options: NSCalendarOptions())
         let reminder = UILocalNotification()
         reminder.fireDate = date
         reminder.alertBody = "Do 12 pushups now!"
@@ -46,7 +48,9 @@ class DDPChallengeSetupViewController: UIViewController {
         let now: NSDateComponents = NSCalendar.currentCalendar().components([.Hour, .Minute, .Second], fromDate: NSDate())
         
         let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-        let date = cal.dateBySettingHour(now.hour, minute: now.minute, second: now.second + 40, ofDate: NSDate(), options: NSCalendarOptions())
+        let min = now.minute + ((now.second >= 20) ? 1: 0)
+
+        let date = cal.dateBySettingHour(now.hour, minute: min, second: (now.second + 40) % 60, ofDate: NSDate(), options: NSCalendarOptions())
         let reminder = UILocalNotification()
         reminder.fireDate = date
         reminder.alertBody = "Did you do 12 pushups?"

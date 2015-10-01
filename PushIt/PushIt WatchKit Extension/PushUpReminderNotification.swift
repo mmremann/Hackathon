@@ -39,7 +39,7 @@ class PushUpReminderNotification: WKUserNotificationInterfaceController {
         
         // setup UI here
         
-        
+        print(localNotification)
         completionHandler(.Custom)
     }
     
