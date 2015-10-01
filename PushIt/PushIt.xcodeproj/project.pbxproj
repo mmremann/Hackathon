@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A78911BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78901BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A78931BB5D0A5001D2BC4 /* PushUpReminderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A78951BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A78971BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */; settings = {ASSET_TAGS = (); }; };
-		1B5A789E1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A789D1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */; };
+		1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */; };
+		1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */; };
+		1B5A78911BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78901BB5CC36001D2BC4 /* PushUpInputInterfaceController.swift */; };
+		1B5A78931BB5D0A5001D2BC4 /* PushUpReminderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78921BB5D0A5001D2BC4 /* PushUpReminderNotification.swift */; };
+		1B5A78951BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */; };
+		1B5A78971BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */; };
+		1B5A789E1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A789D1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift */; };
+		92398F98603606CDFCEF40CB /* Pods_PushIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CB991CDDC414EE9D825E9 /* Pods_PushIt.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569B1BB59F790016237F /* AppDelegate.swift */; };
 		DF2F569E1BB59F790016237F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569D1BB59F790016237F /* ViewController.swift */; };
 		DF2F56A11BB59F790016237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F569F1BB59F790016237F /* Main.storyboard */; };
@@ -31,15 +32,15 @@
 		DF2F56DD1BB59F790016237F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DC1BB59F790016237F /* GlanceController.swift */; };
 		DF2F56DF1BB59F790016237F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56DE1BB59F790016237F /* ComplicationController.swift */; };
 		DF2F56E11BB59F790016237F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F56E01BB59F790016237F /* Assets.xcassets */; };
-		DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */; settings = {ASSET_TAGS = (); }; };
-		DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FB1BB5C5250016237F /* DDPWeek.swift */; settings = {ASSET_TAGS = (); }; };
-		DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FD1BB5C58B0016237F /* DDPDay.swift */; settings = {ASSET_TAGS = (); }; };
-		DF2F57041BB5DAB60016237F /* DDPMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57031BB5DAB60016237F /* DDPMainPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF2F57081BB5DD1C0016237F /* DDPLearnItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57071BB5DD1C0016237F /* DDPLearnItViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF2F570A1BB5DD380016237F /* DDPDoItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF2F570C1BB5DD4D0016237F /* DDPTrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DFA8CA541BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8CA531BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DFA8CA561BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8CA551BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56F91BB5C3AF0016237F /* DDPChallenge.swift */; };
+		DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FB1BB5C5250016237F /* DDPWeek.swift */; };
+		DF2F56FE1BB5C58B0016237F /* DDPDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F56FD1BB5C58B0016237F /* DDPDay.swift */; };
+		DF2F57041BB5DAB60016237F /* DDPMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57031BB5DAB60016237F /* DDPMainPageViewController.swift */; };
+		DF2F57081BB5DD1C0016237F /* DDPLearnItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57071BB5DD1C0016237F /* DDPLearnItViewController.swift */; };
+		DF2F570A1BB5DD380016237F /* DDPDoItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F57091BB5DD380016237F /* DDPDoItViewController.swift */; };
+		DF2F570C1BB5DD4D0016237F /* DDPTrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F570B1BB5DD4D0016237F /* DDPTrackItViewController.swift */; };
+		DFA8CA541BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8CA531BB5F5DF00BE2808 /* DDPChallengeSetupViewController.swift */; };
+		DFA8CA561BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8CA551BB5FBA600BE2808 /* DDPSaltNPeppaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,9 @@
 		1B5A78941BB5D0CB001D2BC4 /* PushUpDetectedNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpDetectedNotificationController.swift; sourceTree = "<group>"; };
 		1B5A78961BB5D0DC001D2BC4 /* PushUpDoneNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushUpDoneNotificationController.swift; sourceTree = "<group>"; };
 		1B5A789D1BB5F13B001D2BC4 /* DayStatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayStatsInterfaceController.swift; sourceTree = "<group>"; };
+		45A69B776E09490A4883405C /* Pods-PushIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushIt/Pods-PushIt.debug.xcconfig"; sourceTree = "<group>"; };
+		698CB991CDDC414EE9D825E9 /* Pods_PushIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		991D10F647A51F6C8ED819E8 /* Pods-PushIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushIt/Pods-PushIt.release.xcconfig"; sourceTree = "<group>"; };
 		DF2F56981BB59F790016237F /* PushIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F569B1BB59F790016237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2F569D1BB59F790016237F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92398F98603606CDFCEF40CB /* Pods_PushIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +207,23 @@
 			name = NoChallengeInProgress;
 			sourceTree = "<group>";
 		};
+		9CF0D043BFE79E182AB66036 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45A69B776E09490A4883405C /* Pods-PushIt.debug.xcconfig */,
+				991D10F647A51F6C8ED819E8 /* Pods-PushIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB361BBF2567C2AC301B037C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				698CB991CDDC414EE9D825E9 /* Pods_PushIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF2F568F1BB59F790016237F = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +233,8 @@
 				DF2F56C41BB59F790016237F /* PushIt WatchKit App */,
 				DF2F56D31BB59F790016237F /* PushIt WatchKit Extension */,
 				DF2F56991BB59F790016237F /* Products */,
+				9CF0D043BFE79E182AB66036 /* Pods */,
+				DB361BBF2567C2AC301B037C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,10 +350,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF2F56ED1BB59F790016237F /* Build configuration list for PBXNativeTarget "PushIt" */;
 			buildPhases = (
+				F49084C65965940B6EC4E682 /* Check Pods Manifest.lock */,
 				DF2F56941BB59F790016237F /* Sources */,
 				DF2F56951BB59F790016237F /* Frameworks */,
 				DF2F56961BB59F790016237F /* Resources */,
 				DF2F56EC1BB59F790016237F /* Embed Watch Content */,
+				4F9F3BB5704E0BEC2876E591 /* Copy Pods Resources */,
+				BD1E95D730ED8E839B8DA47E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -417,6 +444,7 @@
 		DF2F56901BB59F790016237F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Mann, Josh (US - Denver)";
 				TargetAttributes = {
@@ -506,6 +534,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F9F3BB5704E0BEC2876E591 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushIt/Pods-PushIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1E95D730ED8E839B8DA47E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushIt/Pods-PushIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F49084C65965940B6EC4E682 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF2F56941BB59F790016237F /* Sources */ = {
@@ -763,6 +839,7 @@
 		};
 		DF2F56EE1BB59F790016237F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A69B776E09490A4883405C /* Pods-PushIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -775,6 +852,7 @@
 		};
 		DF2F56EF1BB59F790016237F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991D10F647A51F6C8ED819E8 /* Pods-PushIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

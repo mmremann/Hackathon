@@ -40,7 +40,7 @@ class DDPMainPageViewController: UIPageViewController {
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        let itemController = viewController as UIViewController
+//        let itemController = viewController as UIViewController
         
         if self.pageIndex+1 < controllerNames!.count {
             return getItemController(self.pageIndex+1)

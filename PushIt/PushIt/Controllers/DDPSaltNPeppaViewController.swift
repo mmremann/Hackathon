@@ -14,7 +14,12 @@ class DDPSaltNPeppaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.webView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: "https://youtu.be/vCadcBR95oU?t=1")))
+        
+//        <iframe webkit-playsinline width="200" height="200" src="https://www.youtube.com/embed/GOiIxqcbzyM?feature=player_detailpage&playsinline=1" frameborder="0"></iframe>
+        let url = NSURL (string: "http://www.vevo.com/watch/salt-n-pepa/push-it/USIV30400109?playsinline=1");
+        let requestObj = NSURLRequest(URL: url!);
+        webView.allowsInlineMediaPlayback = true
+        webView.loadRequest(requestObj);
 
         // Do any additional setup after loading the view.
     }

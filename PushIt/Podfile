@@ -1,0 +1,26 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+use_frameworks!
+
+target 'PushIt' do
+    pod 'Parse', '~> 1.8'
+    pod 'YouTubePlayer', '~> 0.3'
+    
+end
+
+target 'PushItTests' do
+
+end
+
+target 'PushItUITests' do
+
+end
+
+target 'PushIt WatchKit App' do
+
+end
+
+target 'PushIt WatchKit Extension' do
+
+end
+
