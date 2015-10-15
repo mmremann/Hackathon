@@ -79,7 +79,8 @@
 		1B81DA811BD03E99007EE9AF /* Knockout-HTF92-UltmtCruiserwt in Resources */ = {isa = PBXBuildFile; fileRef = 1B81DA411BD03E99007EE9AF /* Knockout-HTF92-UltmtCruiserwt */; settings = {ASSET_TAGS = (); }; };
 		1B81DA821BD03E99007EE9AF /* Knockout-HTF93-UltmtHeviwt in Resources */ = {isa = PBXBuildFile; fileRef = 1B81DA421BD03E99007EE9AF /* Knockout-HTF93-UltmtHeviwt */; settings = {ASSET_TAGS = (); }; };
 		1B81DA831BD03E99007EE9AF /* Knockout-HTF94-UltmtSumo in Resources */ = {isa = PBXBuildFile; fileRef = 1B81DA431BD03E99007EE9AF /* Knockout-HTF94-UltmtSumo */; settings = {ASSET_TAGS = (); }; };
-		92398F98603606CDFCEF40CB /* Pods_PushIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CB991CDDC414EE9D825E9 /* Pods_PushIt.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1B81DA851BD04117007EE9AF /* DDFontUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B81DA841BD04117007EE9AF /* DDFontUtility.swift */; settings = {ASSET_TAGS = (); }; };
+		92398F98603606CDFCEF40CB /* Pods_PushIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CB991CDDC414EE9D825E9 /* Pods_PushIt.framework */; };
 		DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F569B1BB59F790016237F /* AppDelegate.swift */; };
 		DF2F56A31BB59F790016237F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F56A21BB59F790016237F /* Assets.xcassets */; };
 		DF2F56A61BB59F790016237F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F56A41BB59F790016237F /* LaunchScreen.storyboard */; };
@@ -228,9 +229,8 @@
 		1B81DA411BD03E99007EE9AF /* Knockout-HTF92-UltmtCruiserwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Knockout-HTF92-UltmtCruiserwt"; sourceTree = "<group>"; };
 		1B81DA421BD03E99007EE9AF /* Knockout-HTF93-UltmtHeviwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Knockout-HTF93-UltmtHeviwt"; sourceTree = "<group>"; };
 		1B81DA431BD03E99007EE9AF /* Knockout-HTF94-UltmtSumo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Knockout-HTF94-UltmtSumo"; sourceTree = "<group>"; };
-		45A69B776E09490A4883405C /* Pods-PushIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushIt/Pods-PushIt.debug.xcconfig"; sourceTree = "<group>"; };
+		1B81DA841BD04117007EE9AF /* DDFontUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFontUtility.swift; sourceTree = "<group>"; };
 		698CB991CDDC414EE9D825E9 /* Pods_PushIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		991D10F647A51F6C8ED819E8 /* Pods-PushIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushIt/Pods-PushIt.release.xcconfig"; sourceTree = "<group>"; };
 		DF2F56981BB59F790016237F /* PushIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F569B1BB59F790016237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2F56A21BB59F790016237F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -299,6 +299,7 @@
 				1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */,
 				1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */,
 				1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */,
+				1B81DA841BD04117007EE9AF /* DDFontUtility.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -409,15 +410,6 @@
 			path = Utilities/Fonts;
 			sourceTree = "<group>";
 		};
-		9CF0D043BFE79E182AB66036 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				45A69B776E09490A4883405C /* Pods-PushIt.debug.xcconfig */,
-				991D10F647A51F6C8ED819E8 /* Pods-PushIt.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		DB361BBF2567C2AC301B037C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,7 +427,6 @@
 				DF2F56C41BB59F790016237F /* PushIt WatchKit App */,
 				DF2F56D31BB59F790016237F /* PushIt WatchKit Extension */,
 				DF2F56991BB59F790016237F /* Products */,
-				9CF0D043BFE79E182AB66036 /* Pods */,
 				DB361BBF2567C2AC301B037C /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -842,6 +833,7 @@
 				DF2F56FC1BB5C5250016237F /* DDPWeek.swift in Sources */,
 				DF2F56FA1BB5C3AF0016237F /* DDPChallenge.swift in Sources */,
 				1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */,
+				1B81DA851BD04117007EE9AF /* DDFontUtility.swift in Sources */,
 				DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1072,7 +1064,6 @@
 		};
 		DF2F56EE1BB59F790016237F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45A69B776E09490A4883405C /* Pods-PushIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1086,7 +1077,6 @@
 		};
 		DF2F56EF1BB59F790016237F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 991D10F647A51F6C8ED819E8 /* Pods-PushIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

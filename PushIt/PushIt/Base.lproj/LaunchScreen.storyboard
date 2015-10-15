@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,45 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" translatesAutoresizingMaskIntoConstraints="NO" id="kQF-rX-gi8">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" translatesAutoresizingMaskIntoConstraints="NO" id="Esf-2z-AVV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kQF-rX-gi8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="0m4-UJ-dpp"/>
-                            <constraint firstAttribute="trailing" secondItem="kQF-rX-gi8" secondAttribute="trailing" id="fhH-EY-ujq"/>
-                            <constraint firstItem="kQF-rX-gi8" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="on3-fz-EQG"/>
-                            <constraint firstItem="kQF-rX-gi8" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pky-fs-G9B"/>
+                            <constraint firstItem="Esf-2z-AVV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4gQ-aj-HUc"/>
+                            <constraint firstItem="Esf-2z-AVV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Mut-50-ZPZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Esf-2z-AVV" secondAttribute="bottom" id="Q12-Vm-M96"/>
+                            <constraint firstAttribute="trailing" secondItem="Esf-2z-AVV" secondAttribute="trailing" id="xwc-eV-FuR"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="kQF-rX-gi8"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="0m4-UJ-dpp"/>
-                                <exclude reference="fhH-EY-ujq"/>
-                                <exclude reference="on3-fz-EQG"/>
-                                <exclude reference="pky-fs-G9B"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="kQF-rX-gi8"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="0m4-UJ-dpp"/>
-                                <include reference="fhH-EY-ujq"/>
-                                <include reference="on3-fz-EQG"/>
-                                <include reference="pky-fs-G9B"/>
-                            </mask>
-                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
