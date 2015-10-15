@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupUI()
 
         // Do any additional setup after loading the view.
     }
@@ -21,15 +23,12 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: - Private methods
+    
+    private func setupUI()  {
+        
+        view.backgroundColor = UIColor.PushItDarkBlueColor()
+        
     }
-    */
 
 }

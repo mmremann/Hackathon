@@ -11,4 +11,11 @@ import UIKit
 
 extension UIColor {
     
+    class func PushItDarkBlueColor() -> UIColor {
+        return UIColor(red: 44/255.0, green: 57/255.0, blue: 69/255.0, alpha: 1)
+    }
+    
+    class func PushItGreenColor() -> UIColor {
+        return UIColor(red: 153/255.0, green: 255/255.0, blue: 153/255.0, alpha: 1)
+    }
 }
