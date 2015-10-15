@@ -7,16 +7,6 @@
 //
 
 import Foundation
-
-//
-//  HTSDDateFormatter.swift
-//  HowToSpeakDoctor
-//
-//  Created by Ujwal Manjunath on 8/30/15.
-//  Copyright © 2015 HowToSpeakDoctor. All rights reserved.
-//
-
-import Foundation
 import UIKit
 
 extension NSDateFormatter {
@@ -30,7 +20,7 @@ extension NSDateFormatter {
         let date = dateFormatter.dateFromString(dateString)
         return date
         
-    }
+    }  
     
     class func DDFormattedStringFromDate(date:NSDate) -> String? {
         

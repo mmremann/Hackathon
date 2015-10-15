@@ -3,6 +3,7 @@
 use_frameworks!
 
 target 'PushIt' do
+    pod 'Parse', '~> 1.8'
 end
 
 target 'PushItTests' do
