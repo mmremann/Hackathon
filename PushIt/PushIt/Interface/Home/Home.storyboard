@@ -27,13 +27,14 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="38C-9W-Ul6" userLabel="dividerTop">
                                 <rect key="frame" x="24" y="149" width="38" height="3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="Upu-wT-u2Y"/>
                                     <constraint firstAttribute="height" constant="3" id="xa3-Pl-AOY"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nD2-Ku-i9h" userLabel="containerView">
-                                <rect key="frame" x="24" y="152" width="133" height="151"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD2-Ku-i9h" userLabel="containerView">
+                                <rect key="frame" x="24" y="152" width="133" height="118"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push it real good." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVw-nN-bHx">
                                         <rect key="frame" x="0.0" y="49" width="133" height="20.5"/>
@@ -54,6 +55,7 @@
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-0r-4pX" userLabel="dividerBottom">
                                 <rect key="frame" x="24" y="270" width="38" height="3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="Wp8-w0-Ma4"/>
                                     <constraint firstAttribute="width" constant="38" id="Y4G-a1-xDa"/>
@@ -104,13 +106,12 @@
                             <constraint firstItem="Dct-p5-W7e" firstAttribute="top" secondItem="38C-9W-Ul6" secondAttribute="bottom" constant="53" id="aLn-Nx-pbw"/>
                             <constraint firstItem="FCy-0r-4pX" firstAttribute="top" secondItem="38C-9W-Ul6" secondAttribute="bottom" constant="118" id="agQ-US-P8P"/>
                             <constraint firstItem="38C-9W-Ul6" firstAttribute="leading" secondItem="Sl9-QO-mOx" secondAttribute="leading" constant="24" id="bVc-Q0-GaN"/>
+                            <constraint firstAttribute="trailing" secondItem="4Vy-Ik-Sc4" secondAttribute="trailing" constant="24" id="c2c-Bh-weB"/>
                             <constraint firstItem="FCy-0r-4pX" firstAttribute="leading" secondItem="Sl9-QO-mOx" secondAttribute="leading" constant="24" id="cVD-EV-bVJ"/>
                             <constraint firstItem="FCy-0r-4pX" firstAttribute="top" secondItem="nD2-Ku-i9h" secondAttribute="bottom" id="cgS-lK-2HD"/>
                             <constraint firstItem="4Vy-Ik-Sc4" firstAttribute="leading" secondItem="FCy-0r-4pX" secondAttribute="leading" id="fEe-lp-tJx"/>
                             <constraint firstItem="Os3-Gt-Ht9" firstAttribute="leading" secondItem="4Vy-Ik-Sc4" secondAttribute="leading" id="heN-wp-BIe"/>
-                            <constraint firstItem="Dct-p5-W7e" firstAttribute="top" secondItem="H7I-6o-WKn" secondAttribute="bottom" constant="46" id="lcf-kN-FRn">
-                                <variation key="heightClass=regular-widthClass=compact" constant="26"/>
-                            </constraint>
+                            <constraint firstItem="Dct-p5-W7e" firstAttribute="top" secondItem="H7I-6o-WKn" secondAttribute="bottom" constant="46" id="lcf-kN-FRn"/>
                             <constraint firstAttribute="trailing" secondItem="4Vy-Ik-Sc4" secondAttribute="trailing" constant="24" id="luw-mz-ky1"/>
                             <constraint firstItem="38C-9W-Ul6" firstAttribute="top" secondItem="Dct-p5-W7e" secondAttribute="bottom" constant="30" id="rnw-n0-Bnd"/>
                             <constraint firstItem="Dct-p5-W7e" firstAttribute="leading" secondItem="Sl9-QO-mOx" secondAttribute="leading" constant="16" id="sq2-nR-jPp"/>
@@ -124,6 +125,7 @@
                                 <exclude reference="Wn1-jx-KZi"/>
                                 <exclude reference="bVc-Q0-GaN"/>
                                 <exclude reference="cVD-EV-bVJ"/>
+                                <exclude reference="luw-mz-ky1"/>
                                 <exclude reference="74n-F4-o9p"/>
                             </mask>
                         </variation>
