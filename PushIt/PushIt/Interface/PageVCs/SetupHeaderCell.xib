@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SetupHeaderCell" customModule="PushIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="DVW-7x-Ted">
+                        <rect key="frame" x="24" y="38" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="GAu-uL-LJ3"/>
+                            <constraint firstAttribute="width" constant="36" id="Xk4-PN-fHl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt6-wT-baJ">
+                        <rect key="frame" x="72" y="46" width="224" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="DVW-7x-Ted" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="HDT-Sm-HdQ"/>
+                <constraint firstAttribute="trailing" secondItem="vt6-wT-baJ" secondAttribute="trailing" constant="24" id="VI3-Hf-NJj"/>
+                <constraint firstItem="DVW-7x-Ted" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="Vbq-Wv-yot"/>
+                <constraint firstItem="vt6-wT-baJ" firstAttribute="leading" secondItem="DVW-7x-Ted" secondAttribute="trailing" constant="12" id="h0t-e6-A06"/>
+                <constraint firstItem="vt6-wT-baJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ujJ-uM-2IT"/>
+            </constraints>
+            <size key="customSize" width="387" height="138"/>
+            <connections>
+                <outlet property="headerLabel" destination="vt6-wT-baJ" id="XM9-8m-OFq"/>
+            </connections>
+            <point key="canvasLocation" x="280.5" y="398"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon-logo" width="53" height="53"/>
+    </resources>
+</document>

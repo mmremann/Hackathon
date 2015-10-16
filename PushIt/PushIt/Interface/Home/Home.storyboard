@@ -92,6 +92,9 @@
                                         <exclude reference="MWc-0c-7hS"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="pushItButtonPressed" destination="irR-4y-AJA" eventType="touchUpInside" id="GLq-kc-D6w"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os3-Gt-Ht9">
                                 <rect key="frame" x="24" y="373" width="552" height="37"/>
@@ -156,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akW-IM-MMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="766"/>
+            <point key="canvasLocation" x="1095" y="515"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5vN-1Q-V72">

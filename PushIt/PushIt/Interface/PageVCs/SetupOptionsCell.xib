@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SetupOptionsCell" customModule="PushIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUG-Q6-8Em" userLabel="headerLabel">
+                        <rect key="frame" x="24" y="0.0" width="272" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kBq-6v-dba" userLabel="Divider">
+                        <rect key="frame" x="24" y="31" width="24" height="2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="27c-yf-R5k"/>
+                            <constraint firstAttribute="height" constant="2" id="YOh-VD-MvT"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyV-dn-rIG" userLabel="option2">
+                        <rect key="frame" x="116" y="45" width="88" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="peA-dw-80M"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMb-Xu-p0m" userLabel="option3">
+                        <rect key="frame" x="208" y="45" width="88" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="QAt-c4-iqw"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZP-be-L4h" userLabel="option1">
+                        <rect key="frame" x="24" y="45" width="88" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="IyO-PD-rcF"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="FMb-Xu-p0m" firstAttribute="top" secondItem="dUG-Q6-8Em" secondAttribute="bottom" constant="32" id="4AV-QX-FKa"/>
+                <constraint firstItem="dUG-Q6-8Em" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DTi-Ff-jjw"/>
+                <constraint firstItem="kBq-6v-dba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="FF0-7N-UVN"/>
+                <constraint firstItem="kBq-6v-dba" firstAttribute="top" secondItem="dUG-Q6-8Em" secondAttribute="bottom" constant="10" id="H9O-v5-xjp"/>
+                <constraint firstItem="dUG-Q6-8Em" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="QI9-q5-x6S"/>
+                <constraint firstItem="cyV-dn-rIG" firstAttribute="width" secondItem="eZP-be-L4h" secondAttribute="width" id="SLu-wL-Txy"/>
+                <constraint firstItem="cyV-dn-rIG" firstAttribute="top" secondItem="dUG-Q6-8Em" secondAttribute="bottom" constant="32" id="Tup-2t-gHE"/>
+                <constraint firstItem="FMb-Xu-p0m" firstAttribute="leading" secondItem="cyV-dn-rIG" secondAttribute="trailing" constant="4" id="aAc-Vo-gbo"/>
+                <constraint firstAttribute="trailing" secondItem="FMb-Xu-p0m" secondAttribute="trailing" constant="24" id="b4Z-Ta-h6j"/>
+                <constraint firstItem="FMb-Xu-p0m" firstAttribute="width" secondItem="eZP-be-L4h" secondAttribute="width" id="gB5-aN-YAf"/>
+                <constraint firstItem="cyV-dn-rIG" firstAttribute="top" secondItem="eZP-be-L4h" secondAttribute="top" id="gP9-IG-HT1"/>
+                <constraint firstItem="FMb-Xu-p0m" firstAttribute="top" secondItem="eZP-be-L4h" secondAttribute="top" id="gf9-uF-TqK"/>
+                <constraint firstAttribute="trailing" secondItem="dUG-Q6-8Em" secondAttribute="trailing" constant="24" id="kLa-MJ-pbk"/>
+                <constraint firstItem="eZP-be-L4h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="n0Z-AC-725"/>
+                <constraint firstItem="eZP-be-L4h" firstAttribute="top" secondItem="kBq-6v-dba" secondAttribute="bottom" constant="12" id="obq-TM-GGn"/>
+                <constraint firstItem="cyV-dn-rIG" firstAttribute="leading" secondItem="eZP-be-L4h" secondAttribute="trailing" constant="4" id="opi-sb-6k4"/>
+            </constraints>
+            <size key="customSize" width="229" height="50"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Tup-2t-gHE"/>
+                    <exclude reference="4AV-QX-FKa"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="headerLabel" destination="dUG-Q6-8Em" id="UjX-Fd-W7C"/>
+                <outletCollection property="optionButtons" destination="eZP-be-L4h" collectionClass="NSMutableArray" id="PBI-QQ-rrF"/>
+                <outletCollection property="optionButtons" destination="cyV-dn-rIG" collectionClass="NSMutableArray" id="UFS-3A-6Qz"/>
+                <outletCollection property="optionButtons" destination="FMb-Xu-p0m" collectionClass="NSMutableArray" id="M3e-YP-8Dn"/>
+            </connections>
+            <point key="canvasLocation" x="227" y="441"/>
+        </collectionViewCell>
+    </objects>
+</document>

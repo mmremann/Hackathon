@@ -51,6 +51,6 @@
 		<string>Knockout-HTF27-JuniorBantamwt.otf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<true/>
 </dict>
 </plist>

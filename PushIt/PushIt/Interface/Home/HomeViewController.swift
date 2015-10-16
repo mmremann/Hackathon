@@ -41,5 +41,14 @@ class HomeViewController: UIViewController {
         pushItNowButton.layer.cornerRadius = 2.0
         
     }
+    
+    @IBAction func pushItButtonPressed() {
+        let pageController = UIStoryboard(name: "Pages", bundle: nil).instantiateInitialViewController()
+        self.navigationController?.pushViewController(pageController!, animated: true)
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 
 }
