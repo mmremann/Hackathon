@@ -22,7 +22,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-3b-igY">
-                        <rect key="frame" x="24" y="45" width="272" height="44"/>
+                        <rect key="frame" x="24" y="47" width="272" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="Ab7-Lb-vMb"/>
                         </constraints>
@@ -38,7 +38,7 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="xHJ-3b-igY" firstAttribute="top" secondItem="q2A-Qr-k6O" secondAttribute="bottom" constant="12" id="01M-Lx-yKe"/>
+                <constraint firstItem="xHJ-3b-igY" firstAttribute="top" secondItem="q2A-Qr-k6O" secondAttribute="bottom" constant="14" id="01M-Lx-yKe"/>
                 <constraint firstItem="q2A-Qr-k6O" firstAttribute="top" secondItem="a1m-oV-9lQ" secondAttribute="bottom" constant="10" id="17n-hR-FKv"/>
                 <constraint firstItem="a1m-oV-9lQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="5jV-TY-mqI"/>
                 <constraint firstItem="q2A-Qr-k6O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="BrB-Wn-Him"/>

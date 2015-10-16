@@ -20,6 +20,8 @@ class SetupViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         self.collectionView.registerCell(SetupHeaderCell)
         self.collectionView.registerCell(SetupOptionsCell)
+        self.collectionView.registerCell(SetupStartDateCell)
+
         // Do any additional setup after loading the view.
     }
 
@@ -32,7 +34,7 @@ class SetupViewController: UIViewController, UICollectionViewDataSource, UIColle
     //MARK: - CollectionView DataSource
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3;
+        return 4;
     }
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -43,10 +45,13 @@ class SetupViewController: UIViewController, UICollectionViewDataSource, UIColle
         if row == 0 {
             let headerCell = collectionView.dequeue(SetupHeaderCell.self, indexPath: indexPath)
             return headerCell
-        } else { //if row == 1 || row == 2 {
+        } else if row == 1 || row == 2 {
             let optionsCell = collectionView.dequeue(SetupOptionsCell.self, indexPath: indexPath)
             optionsCell.cellType = setupCellType.all[row - 1]
             return optionsCell
+        } else {
+            let dateCell = collectionView.dequeue(SetupStartDateCell.self, indexPath: indexPath)
+            return dateCell
         }
     }
     
@@ -61,8 +66,10 @@ class SetupViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         if indexPath.row == 0 {
             cellHeight = SetupHeaderCell.height
-        } else {
+        } else if indexPath.row == 1 || indexPath.row == 2 {
             cellHeight = SetupOptionsCell.height
+        } else {
+            cellHeight = SetupStartDateCell.height
         }
         return CGSizeMake(width, cellHeight)
     }

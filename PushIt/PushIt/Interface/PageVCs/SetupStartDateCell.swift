@@ -17,11 +17,12 @@ class SetupStartDateCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setupUI()
     }
     
-    private func setupUI(type:setupCellType) {
+    private func setupUI() {
         
-        let headerString = "Start Date"
+        let headerString = "START DATE"
         let headerAttributes = [NSKernAttributeName: 4.0, NSFontAttributeName:UIFont.KnockoutHTF30JuniorWelterWithSize(19.0), NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         let attributedHeaderString = NSAttributedString(string: headerString, attributes: headerAttributes)
@@ -30,8 +31,9 @@ class SetupStartDateCell: UICollectionViewCell {
         
         dateButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         dateButton.titleLabel?.font = UIFont.KnockoutHTF27JuniorBantamWithSize(26.0)
-        
         dateButton.backgroundColor = UIColor.PushItDarkerBlurColor()
+        dateButton.setTitle(NSDateFormatter.DDStringFromDate(NSDate(), forFormat: "EEEE, MMM. d yyyy")?.uppercaseString, forState: UIControlState.Normal)
+        
     }
 
 }
