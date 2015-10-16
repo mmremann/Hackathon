@@ -9,6 +9,12 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var pushItNowButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,11 @@ class HomeViewController: UIViewController {
     private func setupUI()  {
         
         view.backgroundColor = UIColor.PushItDarkBlueColor()
+        label2.textColor = UIColor.PushItGreenColor()
+        
+        pushItNowButton.backgroundColor = UIColor.PushItGreenColor()
+        pushItNowButton.setTitleColor(UIColor.PushItDarkBlueColor(), forState: UIControlState.Normal)
+        pushItNowButton.layer.cornerRadius = 2.0
         
     }
 

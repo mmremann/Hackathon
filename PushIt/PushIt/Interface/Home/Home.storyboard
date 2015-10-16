@@ -5,6 +5,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Knockout-HTF27-JuniorBantamwt.otf">
+            <string>Knockout-HTF27-JuniorBantamwt</string>
+            <string>Knockout-HTF27-JuniorBantamwt</string>
+            <string>Knockout-HTF27-JuniorBantamwt</string>
+        </mutableArray>
+        <mutableArray key="Knockout-HTF30-JuniorWelterwt.otf">
+            <string>Knockout-HTF30-JuniorWelterwt</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="DmE-dn-fiZ">
@@ -34,12 +44,12 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD2-Ku-i9h" userLabel="containerView">
-                                <rect key="frame" x="24" y="152" width="133" height="118"/>
+                                <rect key="frame" x="24" y="152" width="257" height="118"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push it real good." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVw-nN-bHx">
-                                        <rect key="frame" x="0.0" y="49" width="133" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="23" width="257" height="72"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF27-JuniorBantamwt" family="Knockout" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="50" width="133" height="21"/>
@@ -62,8 +72,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Pushups area great upper body and easy to do exercise." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-Ik-Sc4">
-                                <rect key="frame" x="24" y="303" width="552" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="24" y="303" width="552" height="40"/>
+                                <fontDescription key="fontDescription" name="Knockout-HTF27-JuniorBantamwt" family="Knockout" pointSize="38"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -74,6 +84,7 @@
                                     <constraint firstAttribute="width" constant="552" id="6c8-qy-6na"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="552" id="MWc-0c-7hS"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Knockout-HTF27-JuniorBantamwt" family="Knockout" pointSize="37"/>
                                 <state key="normal" title="Push it now!"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -83,10 +94,10 @@
                                 </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os3-Gt-Ht9">
-                                <rect key="frame" x="24" y="354" width="552" height="61"/>
+                                <rect key="frame" x="24" y="373" width="552" height="37"/>
                                 <string key="text">It will strengthen everything from chest, shoulders, triceps and even your back and abs. No matter what level you are right now, just do the Push It Challenge and you'll be a pro in no time.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Knockout-HTF30-JuniorWelterwt" family="Knockout" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -136,6 +147,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="PMV-mL-bTo"/>
+                    <connections>
+                        <outlet property="label1" destination="jVw-nN-bHx" id="wUB-Ql-nJW"/>
+                        <outlet property="label2" destination="4Vy-Ik-Sc4" id="ukD-EH-Nxd"/>
+                        <outlet property="label3" destination="Os3-Gt-Ht9" id="IvZ-Fl-Fkb"/>
+                        <outlet property="pushItNowButton" destination="nLw-em-LK3" id="RlF-8q-PfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akW-IM-MMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

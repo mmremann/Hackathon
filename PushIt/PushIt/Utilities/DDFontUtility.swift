@@ -12,12 +12,12 @@ import UIKit
 extension UIFont {
     
     class func KnockoutHTF27JuniorBantamWithSize(size:CGFloat) -> UIFont {
-        let descriptor = UIFontDescriptor(name: "Avenir-BookOblique", size: size)
+        let descriptor = UIFontDescriptor(name: "Knockout-HTF27-JuniorBantamwt", size: size)
         return UIFont(descriptor: descriptor, size: size)
     }
     
     class func KnockoutHTF30JuniorWelterWithSize(size:CGFloat) -> UIFont {
-        let descriptor = UIFontDescriptor(name: "Avenir-Light", size: size)
+        let descriptor = UIFontDescriptor(name: "Knockout-HTF30-JuniorWelterwt", size: size)
         return UIFont(descriptor: descriptor, size: size)
     }
     
