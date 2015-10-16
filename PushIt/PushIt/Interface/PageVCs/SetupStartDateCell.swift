@@ -10,7 +10,7 @@ import UIKit
 
 class SetupStartDateCell: UICollectionViewCell {
 
-    static let height:CGFloat = 99.0
+    static let height:CGFloat = 102.0
     
     @IBOutlet weak var dateButton: UIButton!
     @IBOutlet weak var headerLabel: UILabel!

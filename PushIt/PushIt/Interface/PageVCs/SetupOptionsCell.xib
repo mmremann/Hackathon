@@ -28,21 +28,21 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyV-dn-rIG" userLabel="option2">
-                        <rect key="frame" x="116" y="45" width="88" height="44"/>
+                        <rect key="frame" x="116" y="47" width="88" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="peA-dw-80M"/>
                         </constraints>
                         <state key="normal" title="Button"/>
                     </button>
                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMb-Xu-p0m" userLabel="option3">
-                        <rect key="frame" x="208" y="45" width="88" height="44"/>
+                        <rect key="frame" x="208" y="47" width="88" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="QAt-c4-iqw"/>
                         </constraints>
                         <state key="normal" title="Button"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZP-be-L4h" userLabel="option1">
-                        <rect key="frame" x="24" y="45" width="88" height="44"/>
+                        <rect key="frame" x="24" y="47" width="88" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="IyO-PD-rcF"/>
                         </constraints>
@@ -66,7 +66,7 @@
                 <constraint firstItem="FMb-Xu-p0m" firstAttribute="top" secondItem="eZP-be-L4h" secondAttribute="top" id="gf9-uF-TqK"/>
                 <constraint firstAttribute="trailing" secondItem="dUG-Q6-8Em" secondAttribute="trailing" constant="24" id="kLa-MJ-pbk"/>
                 <constraint firstItem="eZP-be-L4h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="n0Z-AC-725"/>
-                <constraint firstItem="eZP-be-L4h" firstAttribute="top" secondItem="kBq-6v-dba" secondAttribute="bottom" constant="12" id="obq-TM-GGn"/>
+                <constraint firstItem="eZP-be-L4h" firstAttribute="top" secondItem="kBq-6v-dba" secondAttribute="bottom" constant="14" id="obq-TM-GGn"/>
                 <constraint firstItem="cyV-dn-rIG" firstAttribute="leading" secondItem="eZP-be-L4h" secondAttribute="trailing" constant="4" id="opi-sb-6k4"/>
             </constraints>
             <size key="customSize" width="229" height="50"/>
