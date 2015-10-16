@@ -11,6 +11,8 @@
 		1B2A58371BD19C4B001E0EC5 /* SetupStartDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A58351BD19C4B001E0EC5 /* SetupStartDateCell.xib */; settings = {ASSET_TAGS = (); }; };
 		1B2A583A1BD19C5C001E0EC5 /* SetupTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A58381BD19C5C001E0EC5 /* SetupTimeCell.swift */; settings = {ASSET_TAGS = (); }; };
 		1B2A583B1BD19C5C001E0EC5 /* SetupTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A58391BD19C5C001E0EC5 /* SetupTimeCell.xib */; settings = {ASSET_TAGS = (); }; };
+		1B2A583E1BD1A9A6001E0EC5 /* SetupCTACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A583C1BD1A9A6001E0EC5 /* SetupCTACell.swift */; settings = {ASSET_TAGS = (); }; };
+		1B2A583F1BD1A9A6001E0EC5 /* SetupCTACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A583D1BD1A9A6001E0EC5 /* SetupCTACell.xib */; settings = {ASSET_TAGS = (); }; };
 		1B5A78891BB5C975001D2BC4 /* DDDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */; };
 		1B5A788D1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */; };
 		1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */; };
@@ -116,6 +118,8 @@
 		1B2A58351BD19C4B001E0EC5 /* SetupStartDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupStartDateCell.xib; sourceTree = "<group>"; };
 		1B2A58381BD19C5C001E0EC5 /* SetupTimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTimeCell.swift; sourceTree = "<group>"; };
 		1B2A58391BD19C5C001E0EC5 /* SetupTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupTimeCell.xib; sourceTree = "<group>"; };
+		1B2A583C1BD1A9A6001E0EC5 /* SetupCTACell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupCTACell.swift; sourceTree = "<group>"; };
+		1B2A583D1BD1A9A6001E0EC5 /* SetupCTACell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupCTACell.xib; sourceTree = "<group>"; };
 		1B5A78881BB5C975001D2BC4 /* DDDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDateFormatter.swift; path = Utilities/DDDateFormatter.swift; sourceTree = "<group>"; };
 		1B5A788C1BB5C9BD001D2BC4 /* DDCollectionViewUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDCollectionViewUtility.swift; path = Utilities/DDCollectionViewUtility.swift; sourceTree = "<group>"; };
 		1B5A788E1BB5C9CF001D2BC4 /* DDViewUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDViewUtility.swift; path = Utilities/DDViewUtility.swift; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 				1B2A58351BD19C4B001E0EC5 /* SetupStartDateCell.xib */,
 				1B2A58381BD19C5C001E0EC5 /* SetupTimeCell.swift */,
 				1B2A58391BD19C5C001E0EC5 /* SetupTimeCell.xib */,
+				1B2A583C1BD1A9A6001E0EC5 /* SetupCTACell.swift */,
+				1B2A583D1BD1A9A6001E0EC5 /* SetupCTACell.xib */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -588,6 +594,7 @@
 			files = (
 				1B2A583B1BD19C5C001E0EC5 /* SetupTimeCell.xib in Resources */,
 				1B2A58371BD19C4B001E0EC5 /* SetupStartDateCell.xib in Resources */,
+				1B2A583F1BD1A9A6001E0EC5 /* SetupCTACell.xib in Resources */,
 				1B8923D71BD1535A009B37B6 /* Knockout-HTF30-JuniorWelterwt.otf in Resources */,
 				1B8923D51BD15315009B37B6 /* Knockout-HTF27-JuniorBantamwt.otf in Resources */,
 				1B7F4A831BD170C20076AAD3 /* SetupOptionsCell.xib in Resources */,
@@ -703,6 +710,7 @@
 				1B5A788F1BB5C9CF001D2BC4 /* DDViewUtility.swift in Sources */,
 				1B7F4A851BD192280076AAD3 /* DDImageUtility.swift in Sources */,
 				DF2F569C1BB59F790016237F /* AppDelegate.swift in Sources */,
+				1B2A583E1BD1A9A6001E0EC5 /* SetupCTACell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
